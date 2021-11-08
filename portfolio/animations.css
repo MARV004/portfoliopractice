@@ -1,0 +1,23 @@
+/*Keyframes */
+
+@keyframes fadeIn {
+    100%{ color: white;}
+     
+   }
+   @keyframes bttn{
+     100%{opacity: 1;
+         color: white;
+         background-color: '';
+         border: solid 3px #551a8b;    
+         font-size: 2.4rem;
+         letter-spacing: .1rem;
+         margin-top: 36px;
+         
+    }
+   }
+  
+   @keyframes icns{
+     0%{opacity:0;}
+     100%{opacity: 1;}
+   }
+ 
