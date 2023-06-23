@@ -90,3 +90,5 @@ console.log(getAverage(ages));
 //arrive at the desired result (except Ex. 3 which I found challenging)
 //I look forward to keep practicing and understanding more problems 
 //in order to get ready for interviews
+
+// I have to practice this before the end of the month 
