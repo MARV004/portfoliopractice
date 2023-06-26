@@ -17,11 +17,11 @@
 
 
 //This is the original array of names
-const names = ['Ralph', 'Joe', 'Mark','Sophie', 'Alvin', 'Laura', 'Kathy','Dean','Lisa', 'Tom']
+const names = ['Ralph', 'Joe', 'Mark','Sophie', 'Alvin', 'Laura', 'Kathy','Dean','Lisa', 'Tom'];
 
 //This is the first solution I mistakenly used to solve this problem
 //a simple .sort() stored withtin another constant
-let orderedNames = names.sort();
+const orderedNames = names.sort();
 
 console.log(orderedNames);
 
@@ -31,10 +31,10 @@ console.log(orderedNames);
 
 //On the bright side : I know how to google, hence I'm ready to work (jk)
 const newOrder = names.sort(function (a , b) {
-    if (a.names < b.names) {
+    if (a < b) {
         return -1;        
     }
-    if (a.names > b.names) {
+    if (a > b) {
         return 1;
     }
     return 0;
@@ -74,13 +74,13 @@ const users = [
 ];
 
 
-let getAverage = users => {
-    let reducer = (a, b) => a + b;
-    let sum = users.reduce(reducer)
+const getAverage = users => {
+    const reducer = (a, b) => a + b;
+    const sum = users.reduce(reducer)
     return sum / users.length;    
 }
 
-let ages = users.map(person => person.age);
+const ages = users.map(person => person.age);
 
 console.log(getAverage(ages));
 
